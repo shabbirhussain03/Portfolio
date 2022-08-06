@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Registration Form </title>
+        <style>
+            body {
+                
+                  background-repeat:no-repeat;
+                  opacity: 100%;
+                  background: size 30%;
+                }
+            #example2 {
+                border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 5px 8px rgb(19, 12, 214),10px 10px 8px rgb(9, 165, 237),
+                15px 15px 8px grey;
+                margin: 20px;
+            }   
+        </style> 
+        <link rel="stylesheet" href="HELP.css">
+    </head>
+    <body>
+        
+        
+      
+      <div id="example2">
+        
+        
+        
+     <form class="signup-form" action="/register" method="post">
+        <!-- form header-->
+        <div class="form header">
+            <h2> Registration </h2>
+        </div>
+        
+        <div class="icon">
+            <img src="kalypso.png">
+        </div>
+        <div class="form-body">
+            <div class="form-group right">
+                <label for="firstname" class="lable-title"><b> First Name </b></label>
+                <input type="text" id="firstname" class="form-input" placeholder="Enter your first name" required="required"/>
+            </div>
+            <br>
+            <div> 
+                <div class="form-group right">
+                    <label for="lastname" class="lable-title"> <b> Last Name </b></label>
+                    <input type="text" id="lastname" class="form-input" placeholder="Enter your last name" required="required"/>
+                </div>
+            </div>
+        </div>
+         <div class="form footer"></div>
+         <!-- Email-->
+        <br>
+        <br>
+         <div class="form-group">
+            <label for="email" class="lable-title"> <b> Email</b> </label>
+            <input type="text" id="email" class="form-input" placeholder="Enter your email" required="required"/>
+         </div>
+         <!--password-->
+        
+        <br>
+        <br>
+         <div class="form-horizontal">
+            <div class="form-group right">
+                <label for="password" class="lable title"><b> Password</b> </label>
+                <input type="password" id="password" class="form-input" placeholder="Enter your password" required="required"/>
+            </div>
+            <!--confirm password-->
+           <br>
+           <br>
+            <div class="form-group right">
+                <label for="confirm-password" class="lable title" ><b> confirm password </b></label>
+                <input type="password" id="confirm-password" class="form-group right" placeholder="Re-enter password" required="required"/>
+             </div>
+         </div>
+         <!--profile picture and age-->
+         <br>
+         <div class="horizontal-group">
+            <div class="form-group right">
+                <label for="choose-file" class="lable-title">
+                    <b> <i>upload profile picture</i></b>
+                </label>
+                <input type="file" id="choose-file" size="80">
+            </div>
+          <div class="form-group right">
+             <label for="experience" class="lable-title"><b>Age</b>
+             <input type="number" min="10" max="24" value="" class="form-input">
+            </label>
+            </div>
+         </div>
+            <!-- <div class="form-group right">
+                <label for="experience" class="lable-title"><b>Age</b>
+                <input type="number" min="10" max="24" value="" class="form-input">
+                </label>
+                </div> -->  <!-- <div class="form-group right">                                 
+         <!--statement-->
+        <br>
+        <br>
+         <div class="horizontal-group">
+            <div class="form-group right">
+              <label class="lable-title"> </label>
+              <div class="input-group">
+                <label for="statement">
+                    <br>
+                    <input type="radio" name="statement" id="statement"> I accept the Terms of Services as well as Privacy Policy
+                </label>
+              </div>
+            </div>
+         </div>
+         <!--form footer-->
+        <br>
+        <br>
+         <div class="form-footer">
+            <span> </span>
+            <button type="submit" class="btn"><b>Create Account</b></button>
+         </div>
+         <p> ----------------------------------------------------------------------------------------------------</p>
+         <p>  Already have an account ? <h4><i><b>Login Now</b></i></p></h4></p>
+        </div>
+    </form>
+    </body>
+</html>
